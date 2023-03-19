@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Simulation</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">Lift Simulation</h1>
+    </header>
+
+    <section class="control">
+      <h3 class="controlTitle">Kindly provide input for getting into simulation of lifts</h3>
+      <!-- Making Form for user input -->
+      <form action="" method="post" id="form" class="controlForm">
+        <div class="controlFloorInput">
+          <label for="floors">No of Floors:</label>
+          <input type="number" min="1" max="15" value="5" id="inputFloors" />
+        </div> <br>
+        <div class="controlLiftInput">
+          <label for="lifts">No of Lifts:</label>
+          <input type="number" min="1" max="15" value="3" id="inputLifts" />
+        </div> <br>
+        <button type="submit" class="controlButton" id="inputButton">
+          Show Simulation
+        </button>
+      </form>
+    </section>
+    
+    <div class="container" id="container">
+      <div class="floorContainer" id="floor">
+        <!-- <div class="floor">
+          <button class="control-btn control-btn-up" >UP</button>
+          <br>
+          <button class="control-btn control-btn-down" >DOWN</button>
+          <span class="floor-number">Floor-1</span>
+        </div> -->
+      </div>
+      <div class="liftContainer" id="lift">
+        <!-- <div class="lift" onclick="onClickOpenLift()">
+        <div class="lift-door lift-door-left"></div>
+        <div class="lift-door lift-door-right"></div> -->
+      </div>
+    </div>
+      <hr>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
